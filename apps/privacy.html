@@ -11,6 +11,7 @@
 </head>
 
 <body>
+
     <!-- Header -->
     <header class="header">
         <div class="container">
@@ -24,12 +25,7 @@
                 <a href="../../contact.html" class="nav-link">Contact</a>
             </nav>
             <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="4" x2="20" y1="12" y2="12" />
-                    <line x1="4" x2="20" y1="6" y2="6" />
-                    <line x1="4" x2="20" y1="18" y2="18" />
-                </svg>
+                ☰
             </button>
         </div>
     </header>
@@ -47,122 +43,138 @@
     <section class="section legal-section">
         <div class="container">
             <div class="legal-content">
-                <span class="last-updated">Last Updated: April 26, 2026</span>
+
+                <span class="last-updated">Last Updated: April 30, 2026</span>
 
                 <h2>Privacy Policy</h2>
-                <p><strong>Effective Date:</strong> April 26, 2026</p>
+                <p><strong>Effective Date:</strong> April 30, 2026</p>
+
                 <p>Welcome to <strong>Recover It</strong>.</p>
-                <p>Your privacy is our top priority. This app is designed to operate <strong>entirely on your device</strong>, and we do not collect or transmit your personal data to any external servers.</p>
+                <p>Your privacy is our top priority. This app operates <strong>entirely on your device</strong>. We do not collect, store, or transmit your personal data to any external servers.</p>
+
                 <hr>
 
                 <h2>1. How Recover It Works</h2>
-                <p>Recover It provides a feature that allows users to view previously received notifications.</p>
-                <p>The app works by using the <strong>Notification Access permission</strong>, which enables it to read notifications that appear on your device.</p>
-                <p>👉 Important:</p>
+                <p>
+                    Recover It allows users to view previously received notifications.
+                    The app uses <strong>Notification Access permission</strong> to read notifications shown on your device.
+                </p>
                 <ul>
-                    <li>The app processes notifications <strong>only from apps that you manually select inside the app</strong></li>
+                    <li>Only apps selected by the user are processed</li>
                     <li>The app does NOT monitor all apps automatically</li>
                 </ul>
+
                 <hr>
 
                 <h2>2. What Data is Accessed</h2>
-                <p>When you enable notification access and select specific apps:</p>
-                <p>The app may access:</p>
+                <p>When enabled, the app may access:</p>
                 <ul>
                     <li>Notification text</li>
-                    <li>Sender name (as shown in notification)</li>
-                    <li>Timestamp of the notification</li>
+                    <li>Sender name (as shown)</li>
+                    <li>Timestamp</li>
                 </ul>
-                <p>⚠️ This data is obtained <strong>only from notifications already visible on your device</strong></p>
+                <p>This data comes only from notifications already visible on your device.</p>
+
                 <hr>
 
                 <h2>3. Local Storage (No Data Leaves Your Device)</h2>
-                <p>All accessed notification data is:</p>
                 <ul>
-                    <li>Stored in a <strong>local database (Room database)</strong></li>
-                    <li>Saved <strong>only on your device</strong></li>
-                    <li>Never uploaded to any server</li>
+                    <li>All data is stored in a local database</li>
+                    <li>Stored only on your device</li>
+                    <li>Never uploaded or shared</li>
                 </ul>
-                <p>👉 We do NOT store, process, or transmit your messages outside your device.</p>
+
                 <hr>
 
                 <h2>4. What We Do NOT Do</h2>
-                <p>Recover It does NOT:</p>
                 <ul>
-                    <li>Access private messages directly from any app</li>
-                    <li>Bypass encryption or security of messaging apps</li>
-                    <li>Upload or sync your data to cloud/server</li>
-                    <li>Share your data with third parties</li>
-                    <li>Sell or monetize your personal messages</li>
+                    <li>No direct access to private messages</li>
+                    <li>No bypassing encryption</li>
+                    <li>No cloud sync</li>
+                    <li>No data selling or sharing</li>
                 </ul>
+
                 <hr>
 
                 <h2>5. User Control</h2>
-                <p>You remain in full control at all times:</p>
                 <ul>
-                    <li>You choose which apps are included</li>
-                    <li>You can disable notification access anytime</li>
-                    <li>You can delete all stored data from within the app</li>
-                    <li>Uninstalling the app removes all stored data</li>
+                    <li>You choose which apps to monitor</li>
+                    <li>You can disable access anytime</li>
+                    <li>You can delete data anytime</li>
+                    <li>Uninstall removes all data</li>
                 </ul>
+
                 <hr>
 
                 <h2>6. Permissions Used</h2>
+
                 <h3>Notification Access Permission</h3>
-                <p>Used only to read notifications from <strong>user-selected apps</strong> to provide in-app functionality.</p>
+                <p>Used only to read notifications from selected apps.</p>
+
                 <h3>Storage Permission (if applicable)</h3>
-                <p>Used only for saving app-related content such as stickers or cached data, all stored locally on your device.</p>
-                <h3>Sticker Storage</h3>
-                <p>Stickers used in the app are stored locally on your device in a private app directory. No sticker data is transmitted to external servers.</p>
-                <hr>
+                <p>
+                    Used only to store app-related content such as notifications,
+                    stickers, and cache. All data remains on your device.
+                </p>
 
-                <h2>7. Analytics (Non-Personal Data)</h2>
-                <p>We may use tools such as <strong>Firebase Analytics</strong> to collect anonymous usage data, including:</p>
+                <h3>Sticker Storage & WhatsApp Integration</h3>
                 <ul>
-                    <li>App performance</li>
-                    <li>Feature usage</li>
-                    <li>Crash reports</li>
+                    <li>Stickers are stored locally on your device</li>
+                    <li>No sticker data is uploaded</li>
+                    <li>Uses official WhatsApp sticker integration methods</li>
+                    <li>Stickers are validated to meet platform requirements</li>
                 </ul>
-                <p>This data does NOT include message content or personal conversations.</p>
+
                 <hr>
 
-                <h2>8. Third-Party Services</h2>
-                <p>We may use:</p>
-                <ul>
-                    <li>Google Firebase Analytics</li>
-                    <li>AdMob (for advertisements, if enabled)</li>
-                </ul>
-                <p>These services may collect anonymized information as per their own privacy policies.</p>
+                <h2>7. Third-Party Services</h2>
+                <p>
+                    This app does NOT use analytics tools or tracking services.
+                </p>
+                <p>
+                    Future versions may include ads, and third-party policies will apply if enabled.
+                </p>
+
                 <hr>
 
-                <h2>9. Data Security</h2>
-                <p>Since all data is stored locally on your device, no personal message data is transmitted externally.</p>
-                <p>You are responsible for securing access to your device.</p>
+                <h2>8. Data Security</h2>
+                <p>
+                    Since all data is stored locally, no personal data is transmitted externally.
+                    You are responsible for securing your device.
+                </p>
+
                 <hr>
 
-                <h2>10. Disclaimer</h2>
-                <p>Recover It is an independent application and is <strong>not affiliated with WhatsApp, Telegram, or any other messaging platform</strong>.</p>
-                <p>The app works solely by reading notifications generated by these apps.</p>
+                <h2>9. Disclaimer</h2>
+                <p>
+                    Recover It is NOT affiliated with or endorsed by WhatsApp Inc.
+                </p>
+                <p>
+                    WhatsApp is a registered trademark of WhatsApp Inc.
+                </p>
+                <p>
+                    This app only reads notifications and does not access encrypted messages.
+                </p>
+
                 <hr>
 
-                <h2>11. Children's Privacy</h2>
-                <p>This app is not intended for children under the age of 13.</p>
+                <h2>10. Children's Privacy</h2>
+                <p>This app is not intended for children under 13.</p>
+
                 <hr>
 
-                <h2>12. Changes to This Policy</h2>
-                <p>We may update this Privacy Policy from time to time. Updates will be reflected within the app.</p>
+                <h2>11. Changes to This Policy</h2>
+                <p>We may update this policy. Changes will be reflected in the app.</p>
+
                 <hr>
 
-                <h2>13. Contact Us</h2>
-                <p>If you have any questions:</p>
-                <p>📧 <a href="mailto:bhinaam6@gmail.com">bhinaam6@gmail.com</a></p>
+                <h2>12. Contact Us</h2>
+                <p>Email: <a href="mailto:bhinaam6@gmail.com">bhinaam6@gmail.com</a></p>
+
                 <hr>
 
                 <p><strong>By using Recover It, you agree to this Privacy Policy.</strong></p>
 
-                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
-                    <a href="index.html" class="btn btn-outline">← Back to App Details</a>
-                </div>
             </div>
         </div>
     </section>
@@ -170,42 +182,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>CodeCraft Technologies</h3>
-                    <p>Professional software publishing and mobile application development company based in Pakistan.
-                        Creating quality applications with modern technologies.</p>
-                </div>
-                <div class="footer-nav">
-                    <h4>Company</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../index.html">Home</a></li>
-                        <li><a href="../../about.html">About Us</a></li>
-                        <li><a href="../../contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <h4>Legal</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../privacy.html">Privacy Policy</a></li>
-                        <li><a href="../../terms.html">Terms & Conditions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <h4>Contact</h4>
-                    <ul class="footer-links">
-                        <li><a href="tel:+923007047435">+92 300 7047435</a></li>
-                        <li><a href="mailto:bhinaam6@gmail.com">Email Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 CodeCraft Technologies. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="../../privacy.html">Privacy</a>
-                    <a href="../../terms.html">Terms</a>
-                </div>
-            </div>
+            <p>&copy; 2026 CodeCraft Technologies. All rights reserved.</p>
         </div>
     </footer>
 
@@ -214,6 +191,6 @@
             document.getElementById('nav').classList.toggle('active');
         });
     </script>
-</body>
 
+</body>
 </html>
