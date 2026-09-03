@@ -95,8 +95,8 @@
                 <h2>Third-Party Services</h2>
 
                 <p>
-                    The application may use trusted third-party services to provide analytics,
-                    advertising, and billing functionality.
+                    The application uses the following trusted third-party services to provide
+                    analytics, advertising, and billing functionality:
                 </p>
 
                 <ul>
@@ -108,11 +108,9 @@
                 </ul>
 
                 <p>
-                    Certain third-party services used by the application, such as Google AdMob
-                    and Meta App Events, may automatically collect information including device
-                    identifiers, Advertising ID, approximate location derived from IP address,
-                    and app interaction data (such as app installs, feature usage, and purchase
-                    events) for advertising measurement and analytics purposes.
+                    Each of these services may independently collect and process information
+                    as described in the sections below. Please review each provider's own
+                    privacy policy for further detail on how they process data.
                 </p>
 
                 <h2>File Storage and Processing</h2>
@@ -137,12 +135,10 @@
                     previous location after the transfer has been completed successfully.
                 </p>
 
-                <h2>Advertisements and Advertising Analytics</h2>
+                <h2>Google AdMob (Advertisements)</h2>
 
                 <p>
-                    Calculator Vault uses Google AdMob to display advertisements within the application,
-                    and uses the Meta App Events SDK to measure the performance of advertising campaigns
-                    run through Meta (Facebook/Instagram) Ads.
+                    Calculator Vault uses Google AdMob to display advertisements within the application.
                 </p>
 
                 <p>
@@ -151,21 +147,9 @@
                 </p>
 
                 <p>
-                    The Meta App Events SDK may collect and process information such as device identifiers,
-                    Advertising ID, IP address, app installs, in-app events (such as onboarding completion
-                    and feature usage), and purchase events. This information is shared with Meta Platforms,
-                    Inc. to measure the effectiveness of advertising campaigns and to help deliver relevant
-                    ads. Meta's use of this information is governed by
-                    <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta's Privacy Policy</a>.
-                </p>
-
-                <p>
-                    Where required by applicable laws (including in the EEA and UK), we use Google's User
-                    Messaging Platform (UMP) to request user consent before serving personalized advertisements
-                    or enabling advertising measurement through AdMob and Meta App Events. Users may manage
-                    their consent preferences through the consent dialog when available. If consent is not
-                    provided, advertising tracking and event collection through the Meta App Events SDK is
-                    disabled for that user.
+                    Some Google services integrated into the application may access the Android
+                    Advertising ID for analytics, fraud prevention, diagnostics, or service
+                    functionality.
                 </p>
 
                 <p>
@@ -180,10 +164,85 @@
                     </li>
                 </ul>
 
+                <h2>Meta App Events (Advertising Measurement)</h2>
+
                 <p>
-                    Some Google and Meta services integrated into the application may access the Android
-                    Advertising ID for analytics, fraud prevention, diagnostics, or service
-                    functionality.
+                    Calculator Vault uses the Meta App Events SDK, provided by Meta Platforms, Inc.,
+                    to measure the performance of advertising campaigns run through Meta (Facebook
+                    and Instagram) Ads.
+                </p>
+
+                <p>
+                    The Meta App Events SDK may collect and process information such as device
+                    identifiers, the Advertising ID, IP address, app installs, in-app events
+                    (such as onboarding completion and feature usage), and purchase events. This
+                    information is shared with Meta Platforms, Inc. to measure the effectiveness
+                    of advertising campaigns and to help deliver relevant ads.
+                </p>
+
+                <p>
+                    Meta's collection and use of this information is governed by
+                    <a href="https://www.facebook.com/privacy/policy/" target="_blank">Meta's Privacy Policy</a>,
+                    and, where applicable, by
+                    <a href="https://www.facebook.com/legal/EU_data_transfer_addendum" target="_blank">Meta's EU Data Transfer Addendum</a>.
+                </p>
+
+                <p>
+                    As described in the "GDPR and EEA/UK Users" section below, event collection
+                    through the Meta App Events SDK is disabled by default for users in the
+                    EEA, UK, and Switzerland until consent is obtained.
+                </p>
+
+                <h2>GDPR and EEA / UK Users</h2>
+
+                <p>
+                    If you are located in the European Economic Area (EEA), the United Kingdom,
+                    or Switzerland, the General Data Protection Regulation (GDPR) and equivalent
+                    local laws apply to how your data is processed.
+                </p>
+
+                <p>
+                    To support compliance with these laws, Calculator Vault uses Google's User
+                    Messaging Platform (UMP) SDK to determine whether a user is located in a
+                    region requiring consent, and to present a consent form before any
+                    consent-requiring data collection or ad personalization takes place.
+                </p>
+
+                <ul>
+                    <li>
+                        Advertising personalization through Google AdMob is only enabled after
+                        consent is obtained through the UMP consent form, where required.
+                    </li>
+                    <li>
+                        Automatic event logging and Advertising ID collection through the Meta
+                        App Events SDK are disabled by default (via
+                        <code>AutoLogAppEventsEnabled</code> and
+                        <code>AdvertiserIDCollectionEnabled</code> manifest settings) and are
+                        only enabled after the UMP consent flow confirms that ads may be requested
+                        for that user.
+                    </li>
+                    <li>
+                        If consent is not granted, or the UMP flow determines ads cannot be
+                        requested, the app continues to function normally, but advertising
+                        personalization and Meta App Events tracking remain disabled for that
+                        session.
+                    </li>
+                    <li>
+                        Users in the EEA, UK, and Switzerland may be shown a stricter minimum age
+                        requirement in accordance with local digital consent age laws, enforced
+                        through our Meta Platform's GDPR-restricted app settings.
+                    </li>
+                </ul>
+
+                <p>
+                    Users in the EEA, UK, and Switzerland have rights under the GDPR, including
+                    the right to access, correct, delete, or restrict the processing of their
+                    personal data, and the right to withdraw consent at any time. Since
+                    Calculator Vault does not require account registration and does not store
+                    personal data on our own servers, most of these rights can be exercised
+                    directly by managing your consent choices in the app, adjusting your device's
+                    Advertising ID settings, or by contacting us using the details in the
+                    "Contact Us" section below.
                 </p>
 
                 <h2>Internet Usage</h2>
@@ -204,7 +263,7 @@
                 <ul>
                     <li>All purchase transactions are processed securely by Google Play</li>
                     <li>We do not collect or store credit card or payment information</li>
-                    <li>We may receive information about successful purchases and entitlement status, which may also be shared with advertising partners (such as Meta) for advertising measurement purposes</li>
+                    <li>We may receive information about successful purchases and entitlement status, which may also be shared with advertising partners (such as Meta) for advertising measurement purposes, subject to consent where required</li>
                 </ul>
 
                 <h2>Data Security</h2>
